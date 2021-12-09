@@ -32,14 +32,14 @@ body {
 }
 
 .button-primary {
-    padding: 10px 15px;
+    padding: 15px 20px;
     background-color: $primary-button-back;
     border: none;
     color: $button-text;
     text-transform: uppercase;
     font-weight: 800;
-    border-radius: 20px;
-    font-size: 12px;
+    border-radius: 25px;
+    font-size: 11px;
     letter-spacing: 2px;
     cursor: pointer;
     transition: background .4s ease;
@@ -48,15 +48,15 @@ body {
     }
 }
 
-.secondary-primary {
-    padding: 10px 15px;
+.button-secondary {
+    padding: 15px 20px;
     background-color: $secondary-button-back;
     border: none;
     color: $button-text;
     text-transform: uppercase;
     font-weight: 800;
-    border-radius: 20px;
-    font-size: 12px;
+    border-radius: 25px;
+    font-size: 11px;
     letter-spacing: 2px;
     cursor: pointer;
     transition: background .4s ease;
