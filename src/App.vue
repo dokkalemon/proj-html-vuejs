@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :headerScroll="headerScroll"/>
 
     <Main />
 
@@ -20,9 +20,27 @@ export default {
   name: 'App',
   components: {
     Header,
-    Main
-    
+    Main,
+  },
+
+  data() {
+    return {
+      headerScroll: false
+    }
+  },
+
+  created () {
+    window.addEventListener('scroll', this.scrollPage);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.scrollPage);
+  },
+  methods: {
+    scrollPage () {
+      this.headerScroll = true;
+    }
   }
+  
 }
 </script>
 

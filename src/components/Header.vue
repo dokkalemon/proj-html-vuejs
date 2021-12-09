@@ -1,5 +1,5 @@
 <template>
-  <header class="full-width">
+  <header class="full-width" :class="{active: headerScroll}">
       <div class="header container px-15">
           <div class="header-logo">
               <img src="../assets/logo_seo_w_1x.png" alt="">
@@ -23,7 +23,11 @@
 
 <script>
 export default {
-    name: 'Header'
+    name: 'Header',
+
+    props: {
+        headerScroll: Boolean
+    }
 }
 </script>
 
@@ -31,7 +35,15 @@ export default {
 //import vars;
 @import '../styles/vars.scss';
 
-header {position: fixed; z-index: 999;}
+header {position: fixed; z-index: 999; transition: all 0.4s ease}
+header.active {
+    background-color: #051745;
+    .header {
+        height: 60px;
+        transition: all 0.4s ease
+    }
+    
+}
 
 .header {
     height: 100px;
