@@ -5,7 +5,7 @@
 
     <Section :infoTemplateArray="infoTemplateCard"/>
 
-    <Service />
+    <Service :infoServiceArray="infoServiceCard"/>
 
 
   </main>
@@ -43,6 +43,30 @@ export default {
                     icon: 'fas fa-tint',
                     title: 'Get Results',
                     text: 'Vestibulum scelerisque egestas lectus sit amet molestie. Donec consectetur cursus est sed blandit. Nunc sed risus lacus.'
+                },
+            ],
+
+            //Second Group of Card
+            infoServiceCard: [
+                {
+                    icon: 'fab fa-google',
+                    title: 'Google SEO',
+                    text: 'Vestibulum in lacinia metus. Suspendisse in enim ipsum. Nulla facilisi. Donec ante turpis, dictum sed magna et, dapibus faucibus odio.'
+                },
+                {
+                    icon: 'fas fa-cog',
+                    title: 'Brand Strategy',
+                    text: 'Vestibulum in lacinia metus. Suspendisse in enim ipsum. Nulla facilisi. Donec ante turpis, dictum sed magna et, dapibus faucibus odio.'
+                },
+                {
+                    icon: 'fas fa-building',
+                    title: 'Local SEO',
+                    text: 'Vestibulum in lacinia metus. Suspendisse in enim ipsum. Nulla facilisi. Donec ante turpis, dictum sed magna et, dapibus faucibus odio.'
+                },
+                {
+                    icon: 'far fa-chart-bar',
+                    title: 'SEO Analysis',
+                    text: 'Vestibulum in lacinia metus. Suspendisse in enim ipsum. Nulla facilisi. Donec ante turpis, dictum sed magna et, dapibus faucibus odio.'
                 },
             ]
         }

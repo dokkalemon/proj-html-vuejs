@@ -7,18 +7,33 @@
           <Title :secondarySet="true"
           title="See Out Top Notch Services"
           />
+
+        <div class="service-cards">
+            <PrimaryCard v-for="(item, index) in infoServiceArray" :key="`service${index}`"
+            :secondarySet="true"
+            :icon="item.icon"
+            :title="item.title"
+            :text="item.text"
+            />
+            
+        </div>
       </div>
   </section>
 </template>
 
 <script>
 import Title from '@/components/Title.vue'
+import PrimaryCard from '@/components/PrimaryCard.vue'
 
 export default {
     name: 'Service',
 
     components: {
-        Title
+        Title,
+        PrimaryCard
+    },
+    props: {
+        infoServiceArray: Array,
     }
 }
 </script>
@@ -41,12 +56,17 @@ export default {
             height: 100%;
             width: 100%;
             object-fit: cover;
-    
         }
     }
     .service-container {
     text-align: center;
-}
+    position: relative;
+    z-index: 2;
+        .service-cards {
+            width: 100%;
+            display: flex;
+        }
+    }
 }
 
 </style>

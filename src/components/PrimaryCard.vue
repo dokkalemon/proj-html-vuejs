@@ -1,6 +1,6 @@
 <template>
   <section class="card" >
-    <div class="card-container" :class="{primary: primarySet}">
+    <div class="card-container " :class="{primary: primarySet, secondary: secondarySet}">
         <div class="card-icon">
             <i :class="icon"></i>
         </div>
@@ -9,6 +9,9 @@
         </div>
         <div class="card-text">
             <p>{{text}}</p>
+        <div class="card-more" v-show="secondarySet">
+            <a href="">Read More ></a>
+        </div>
         </div>
     </div>
   </section>
@@ -19,6 +22,7 @@ export default {
     name: 'PrimaryCard',
     props: {
         primarySet : Boolean,
+        secondarySet : Boolean,
         icon: String,
         title: String,
         text: String
@@ -60,15 +64,39 @@ export default {
             color: $primary-title;
         }
         .card-text {
-            padding: 15px 50px 50px 30px;
+            padding: 15px 40px 35px 40px;
             color: $primary-text;
             font-size: 14px;
             line-height: 25px;
             font-weight: 500;
+            text-align: center;
+        }
+
+        .card-more {
+            padding-top: 15px;
+            a {
+                color: $primary-color;
+
+                &:hover {
+                    opacity: 0.5
+
+                }
+            }
         }
     }
     .primary {
         background-color: #fff;
+    }
+
+    .secondary {
+        background-color: $tertiary-color;
+        .card-title {
+            color: white;
+        }
+        .card-text {
+            color: $secondary-text;
+        }
+        
     }
 }
 
