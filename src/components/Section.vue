@@ -6,16 +6,35 @@
               <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</h4>
           </div>
 
-          <div class="cards debug">
-
+          <div class="section-cards">
+              <PrimaryCard :primarySet="true" 
+              icon="fas fa-road"
+              text="Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi ligula euismod odio, vel dictum mi risus a mi."
+              title="Establish Goals"
+              />
+              <PrimaryCard :primarySet="true"
+              icon="fas fa-video"
+              title="Work With a Team"
+              text="Cras semper auctor aliquam. Sed porta sed lacus sit amet consectetur. Lorem ipsum dolor sit amet, consectetur adipiscin."
+              />
+              <PrimaryCard :primarySet="true"
+              icon="fas fa-tint"
+              title="Get Results"
+              text="Vestibulum scelerisque egestas lectus sit amet molestie. Donec consectetur cursus est sed blandit. Nunc sed risus lacus."
+              />
           </div>
       </div>
   </section>
 </template>
 
 <script>
+import PrimaryCard from '@/components/PrimaryCard.vue'
+
 export default {  
-    name: 'Section'
+    name: 'Section',
+    components: {
+        PrimaryCard,
+    }
 
 }
 </script>
@@ -43,6 +62,9 @@ export default {
                 width: 45%;
                 margin: 0 auto;
             }
+        }
+        .section-cards {
+            display: flex;
         }
     }
 }
