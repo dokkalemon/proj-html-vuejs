@@ -3,7 +3,7 @@
     <Jumbo />
     
 
-    <Section />
+    <Section :infoTemplateArray="infoTemplateCard"/>
 
 
 
@@ -21,6 +21,29 @@ export default {
         Jumbo,
         Section
 
+    },
+
+    data() {
+        return {
+            //First Group of card
+            infoTemplateCard: [
+                {
+                    icon: 'fas fa-road',
+                    title: 'Establish Goals',
+                    text: 'Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi ligula euismod odio, vel dictum mi risus a mi.'
+                },
+                {
+                    icon: 'fas fa-video',
+                    title: 'Work With a Team',
+                    text: 'Cras semper auctor aliquam. Sed porta sed lacus sit amet consectetur. Lorem ipsum dolor sit amet, consectetur adipiscin.'
+                },
+                {
+                    icon: 'fas fa-tint',
+                    title: 'Get Results',
+                    text: 'Vestibulum scelerisque egestas lectus sit amet molestie. Donec consectetur cursus est sed blandit. Nunc sed risus lacus.'
+                },
+            ]
+        }
     }
 }
 </script>
