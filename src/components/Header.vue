@@ -6,12 +6,7 @@
           </div>
           <nav class="header-link">
               <ul>
-                  <li><a href="" class="active">Home</a></li>
-                  <li><a href="">Who We Are</a></li>
-                  <li><a href="">What We Do</a></li>
-                  <li><a href="">Where We Work</a></li>
-                  <li><a href="" class="label">Careers</a></li>
-                  <li><a href="">News</a></li>
+                  <li v-for="(item, index) in headerArray" :key="`headerItem${index}`"><a href="" :class="{active: item.activeState, label: item.labelState}" >{{item.label}}</a></li>
               </ul>
           </nav>
           <div class="header-button">
@@ -26,7 +21,8 @@ export default {
     name: 'Header',
 
     props: {
-        headerScroll: Boolean
+        headerScroll: Boolean,
+        headerArray: Array
     }
 }
 </script>
@@ -52,6 +48,9 @@ header.active {
         height: 100%;
         display: flex;
         align-items: center;
+        img {
+            height: 40px;
+        }
     }
 
     .header-link {

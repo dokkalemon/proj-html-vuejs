@@ -29,6 +29,7 @@ export default {
 
     data() {
         return {
+
             //First Group of card
             infoTemplateCard: [
                 {
@@ -72,6 +73,7 @@ export default {
                 },
             ],
 
+            //image for 'Our Work' Section
             workImage: [
                 {
                     name: 'case-study-gallery-3-1-600x450.jpg'

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header :headerScroll="headerScroll"/>
+    <Header :headerScroll="headerScroll" :headerArray="headerItem"/>
 
     <Main />
 
@@ -25,7 +25,47 @@ export default {
 
   data() {
     return {
-      headerScroll: false
+      headerScroll: false,
+
+      //Header Nav Item
+            headerItem: [
+                {
+                    label: 'Home',
+                    activeState: true,
+                    url: '/',
+                    labelState: false
+                },
+                {
+                    label: 'Who We Are',
+                    activeState: false,
+                    url: '/',
+                    labelState: false
+                },
+                {
+                    label: 'What We Do',
+                    activeState: false,
+                    url: '/',
+                    labelState: false
+                },
+                {
+                    label: 'Where We Eork',
+                    activeState: false,
+                    url: '/',
+                    labelState: false
+                },
+                {
+                    label: 'Careers',
+                    activeState: false,
+                    url: '/',
+                    labelState: true
+                },
+                {
+                    label: 'News',
+                    activeState: false,
+                    url: '/',
+                    labelState: false
+                },
+            ],
     }
   },
 
