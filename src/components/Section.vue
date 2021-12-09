@@ -23,6 +23,10 @@
               text="Vestibulum scelerisque egestas lectus sit amet molestie. Donec consectetur cursus est sed blandit. Nunc sed risus lacus."
               />
           </div>
+
+          <div class="section-image">
+              <img src="../assets/agency-seo-desk-front-1200x570.jpg" alt="">
+          </div>
       </div>
   </section>
 </template>
@@ -65,6 +69,9 @@ export default {
         }
         .section-cards {
             display: flex;
+        }
+        .section-image {
+            margin-top: 20px;
         }
     }
 }

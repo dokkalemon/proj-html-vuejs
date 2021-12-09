@@ -1,6 +1,6 @@
 <template>
   <section class="card" >
-    <div class="card-container">
+    <div class="card-container" :class="{primary: primarySet}">
         <div class="card-icon">
             <i :class="icon"></i>
         </div>
@@ -41,10 +41,10 @@ export default {
         padding: 0;
         padding: 10px 0px 10px 10px;
     }
+    
     .card-container {
         height: 100%;
         width: 100%;
-        background-color: #fff;
         .card-icon {
             height: 100px;
             display: flex;
@@ -66,6 +66,9 @@ export default {
             line-height: 25px;
             font-weight: 500;
         }
+    }
+    .primary {
+        background-color: #fff;
     }
 }
 
