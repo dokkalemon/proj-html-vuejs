@@ -36,6 +36,8 @@ export default {
     window.removeEventListener('scroll', this.scrollPage);
   },
   methods: {
+
+    //Function for Header Background on scroll page
     scrollPage () {
       this.headerScroll = true;
     }

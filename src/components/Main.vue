@@ -1,16 +1,25 @@
 <template>
   <main>
-      <Jumbo />
+    <Jumbo />
+    
+
+    <Section />
+
+
+
+
   </main>
 </template>
 
 <script>
 import Jumbo from '@/components/Jumbo.vue'
+import Section from '@/components/Section.vue'
 
 export default {
     name: 'Main',
     components: {
-        Jumbo
+        Jumbo,
+        Section
 
     }
 }
