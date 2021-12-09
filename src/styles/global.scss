@@ -16,8 +16,13 @@ body {
     font-family: $global-font;
 }
 
+.full-width {
+    width: 100%
+}
+
 .container {
-    width: 1200px
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .px-15 {
