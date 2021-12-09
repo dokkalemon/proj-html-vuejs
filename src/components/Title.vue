@@ -1,7 +1,7 @@
 <template>
-    <div class="section-title">
+    <div class="section-title" :class="{secondary: secondarySet}">
         <h2>{{title}}</h2>
-        <h4>{{subtitle}}</h4>
+        <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</h4>
     </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
 
     props: {
         title: String,
-        subtitle: String,
+        secondarySet: Boolean,
     }
 }
 </script>
@@ -34,7 +34,16 @@ export default {
                 font-weight: 500;
                 width: 45%;
                 margin: 0 auto;
-            }
+         }
         }
+
+.secondary {
+    h2 {
+        color: white;
+    }
+    h4 {
+        color: $secondary-text
+    }
+}
 
 </style>

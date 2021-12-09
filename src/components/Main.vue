@@ -5,7 +5,7 @@
 
     <Section :infoTemplateArray="infoTemplateCard"/>
 
-
+    <Service />
 
 
   </main>
@@ -14,12 +14,14 @@
 <script>
 import Jumbo from '@/components/Jumbo.vue'
 import Section from '@/components/Section.vue'
+import Service from '@/components/Service.vue'
 
 export default {
     name: 'Main',
     components: {
         Jumbo,
-        Section
+        Section,
+        Service
 
     },
 

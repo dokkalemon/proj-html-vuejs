@@ -2,9 +2,8 @@
   <section class="section full-width">
       <div class="section-content container px-15">
         
-          <Title 
+          <Title
           title="Meet the new Agency SEO Template From The Avada Team"
-          subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
           />
 
           <div class="section-cards">
@@ -52,7 +51,10 @@ export default {
             display: flex;
         }
         .section-image {
+            height: 100%;
+            width: 100%;
             margin-top: 20px;
+            display: flex;
         }
     }
 }
