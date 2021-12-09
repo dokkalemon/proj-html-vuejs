@@ -1,0 +1,30 @@
+/* GLOBAL STYLE */
+
+//Import vard
+@import './vars.scss';
+
+//Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Utilities
+body {
+    background-color: $background;
+    font-family: $global-font;
+}
+
+.container {
+    width: 1200px
+}
+
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.debug {
+    border: 1px solid red;
+}
