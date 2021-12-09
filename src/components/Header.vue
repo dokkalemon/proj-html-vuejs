@@ -31,7 +31,7 @@ export default {
 //import vars;
 @import '../styles/vars.scss';
 
-header {position: fixed}
+header {position: fixed; z-index: 999;}
 
 .header {
     height: 100px;

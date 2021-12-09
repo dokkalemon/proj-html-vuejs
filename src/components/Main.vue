@@ -1,12 +1,18 @@
 <template>
   <main>
-      qui Main
+      <Jumbo />
   </main>
 </template>
 
 <script>
+import Jumbo from '@/components/Jumbo.vue'
+
 export default {
-    name: 'Main'
+    name: 'Main',
+    components: {
+        Jumbo
+
+    }
 }
 </script>
 
