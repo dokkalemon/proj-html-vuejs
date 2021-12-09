@@ -14,6 +14,7 @@
 body {
     background-color: $background;
     font-family: $global-font;
+    font-size: 16px;
 }
 
 .full-width {
@@ -30,6 +31,41 @@ body {
     padding-right: 15px;
 }
 
+.button-primary {
+    padding: 10px 15px;
+    background-color: $primary-button-back;
+    border: none;
+    color: $button-text;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background .4s ease;
+    &:hover {
+        background-color: $primary-button-hover
+    }
+}
+
+.secondary-primary {
+    padding: 10px 15px;
+    background-color: $secondary-button-back;
+    border: none;
+    color: $button-text;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 20px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background .4s ease;
+    &:hover {
+        background-color: $secondary-button-hover
+    }
+}
+
 .debug {
     border: 1px solid red;
 }
+
