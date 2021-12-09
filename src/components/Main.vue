@@ -7,6 +7,7 @@
 
     <Service :infoServiceArray="infoServiceCard"/>
 
+    <Work :imageArray="workImage"/>
 
   </main>
 </template>
@@ -15,14 +16,15 @@
 import Jumbo from '@/components/Jumbo.vue'
 import Section from '@/components/Section.vue'
 import Service from '@/components/Service.vue'
+import Work from '@/components/Work.vue'
 
 export default {
     name: 'Main',
     components: {
         Jumbo,
         Section,
-        Service
-
+        Service,
+        Work
     },
 
     data() {
@@ -67,6 +69,27 @@ export default {
                     icon: 'far fa-chart-bar',
                     title: 'SEO Analysis',
                     text: 'Vestibulum in lacinia metus. Suspendisse in enim ipsum. Nulla facilisi. Donec ante turpis, dictum sed magna et, dapibus faucibus odio.'
+                },
+            ],
+
+            workImage: [
+                {
+                    name: 'case-study-gallery-3-1-600x450.jpg'
+                },
+                {
+                    name: 'case-study-gallery-2-600x450.jpg'
+                },
+                {
+                    name: 'case-study-gallery-1-1-600x450.jpg'
+                },
+                {
+                    name: 'case-study-gallery-4-1-600x450.jpg'
+                },
+                {
+                    name: 'case-study-gallery-5-1-600x450.jpg'
+                },
+                {
+                    name: 'case-study-gallery-6-1-600x450.jpg'
                 },
             ]
         }

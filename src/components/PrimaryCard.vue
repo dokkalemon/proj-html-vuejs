@@ -45,7 +45,6 @@ export default {
         padding: 0;
         padding: 10px 0px 10px 10px;
     }
-    
     .card-container {
         height: 100%;
         width: 100%;
@@ -71,7 +70,6 @@ export default {
             font-weight: 500;
             text-align: center;
         }
-
         .card-more {
             padding-top: 15px;
             a {
@@ -87,7 +85,6 @@ export default {
     .primary {
         background-color: #fff;
     }
-
     .secondary {
         background-color: $tertiary-color;
         .card-title {
