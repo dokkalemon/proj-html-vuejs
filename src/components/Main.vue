@@ -26,6 +26,7 @@ import Work from '@/components/Work.vue'
 import Plans from '@/components/Plans.vue'
 import News from '@/components/News.vue'
 import Testimonials from '@/components/Testimonials.vue'
+import Consulting from '@/components/Consulting.vue'
 
 export default {
     name: 'Main',
@@ -36,7 +37,8 @@ export default {
         Work,
         Plans,
         News,
-        Testimonials
+        Testimonials,
+        Consulting
     },
 
     data() {
