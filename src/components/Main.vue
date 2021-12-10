@@ -15,6 +15,8 @@
 
     <Testimonials />
 
+    <Consulting />
+
   </main>
 </template>
 
