@@ -52,6 +52,8 @@ export default {
     height: 100%;
     width: 100%;
     padding: 5px;
+    transition: all .4s ease;
+    cursor: pointer;
     .plans-card-container {
         height: 100%;
         width: 100%;
@@ -113,6 +115,10 @@ export default {
     }
     &:last-child {
         padding: 5px 0px 5px 5px
+    }
+
+    &:hover {
+        transform: scale(1.05)
     }
 }
 

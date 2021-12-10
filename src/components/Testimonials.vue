@@ -171,6 +171,7 @@ export default {
                 .logo {
                     height: 100%;
                     width: 50%;
+                    cursor: pointer;
                     img {
                         height: 110px;
                     }
