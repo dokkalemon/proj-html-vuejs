@@ -1,6 +1,9 @@
 <template>
   <section class="news container px-15">
-    <Title title="Our News" />
+    <Title 
+    title="Our News" 
+    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+    />
 
     <div class="posts"> 
       <Post v-for="(item, index) in postArray" :key="`post${index}`"
