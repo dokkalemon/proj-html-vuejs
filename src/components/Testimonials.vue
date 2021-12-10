@@ -61,19 +61,9 @@
                     <img src="../assets/clients_partner_4-200x202.png" alt="">
                 </div>
             </div>
-        
-                
-        
         </div>
         </div>
-        
-
- 
-    
 </section>
-
-
-
 </template>
 
 <script>
