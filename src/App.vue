@@ -4,7 +4,7 @@
 
     <Main />
 
-    <Footer />
+    <Footer :footerArray="headerItem"/>
 
   </div>
 </template>

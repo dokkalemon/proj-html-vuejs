@@ -7,13 +7,8 @@
 
           <div class="footer-nav">
               <ul>
-                  <li><a href="" class="active">Home</a></li>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Home</a></li>
+                  <li v-for="(item, index) in footerArray" :key="`footer${index}`"><a :href="item.url" :class="{active: item.activeState}">{{item.label}}</a></li>
+             
               </ul>
           </div>
 
@@ -46,6 +41,10 @@
 <script>
 export default {
     name: 'Footer',
+
+    props: {
+        footerArray: Array,
+    }
 }
 </script>
 
