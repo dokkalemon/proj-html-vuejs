@@ -9,7 +9,7 @@
 
     <Work :imageArray="workImage"/>
 
-    <Plans />
+    <Plans :plansArray="plansCard"/>
 
   </main>
 </template>
@@ -97,6 +97,37 @@ export default {
                 {
                     name: 'case-study-gallery-6-1-600x450.jpg'
                 },
+            ],
+
+            plansCard: [
+                {
+                    name: 'Standard',
+                    price: '19',
+                    numberProject: '5',
+                    storage: '5 GB',
+                    buttonState: true,
+                },
+                {
+                    name: 'Premium',
+                    price: '29',
+                    numberProject: '10',
+                    storage: '15 GB',
+                    buttonState: true,
+                },
+                {
+                    name: 'Professional',
+                    price: '39',
+                    numberProject: '15',
+                    storage: '30 GB',
+                    buttonState: false,
+                },
+                {
+                    name: 'Extreme',
+                    price: '59',
+                    numberProject: 'Unlimited',
+                    storage: 'Unlimited',
+                    buttonState: true,
+                }
             ]
         }
     }

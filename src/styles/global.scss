@@ -65,6 +65,25 @@ body {
     }
 }
 
+.buttonTertiary {
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 2px solid currentColor;
+    color: $primary-text;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 25px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .4s ease;
+    &:hover {
+        background-color: $primary-text;
+        color: white;
+        border: 2px solid $primary-text;
+    }
+}
+
 .debug {
     border: 1px solid red;
 }

@@ -8,6 +8,22 @@
             <Title :secondarySet="true"
             title="Our Plans"
             />
+
+        <div class="cards">
+            <PlansCard v-for="(item, index) in plansArray" :key="`plans${index}`"
+            :name="item.name"
+            :price="item.price"
+            :numberProject="item.numberProject"
+            :storage="item.storage"
+            :tertiarySet="item.buttonState"
+            />
+
+
+        </div>
+
+
+
+
         </div>
         
 
@@ -16,12 +32,17 @@
 </template>
 
 <script>
-import Title from '@/components/Title.vue'
+import Title from '@/components/Title.vue';
+import PlansCard from '@/components/PlansCard.vue';
 
 export default {
     name: 'Plans',
     components: {
-        Title
+        Title,
+        PlansCard,
+    },
+    props: {
+        plansArray: Array,
     }
 }
 </script>
@@ -31,7 +52,6 @@ export default {
 @import '../styles/vars.scss';
 
 .plans {
-    height: 800px;
     position: relative;
     padding-top: 100px;
     .plans-cover {
@@ -49,6 +69,12 @@ export default {
         text-align: center;
         position: relative;
         z-index: 2;
+        padding-bottom: 80px;
+
+        .cards {
+            height: 430px;
+            display: flex;
+        }
     }
     
 }
