@@ -8,7 +8,7 @@
             <Title :secondarySet="true"
             title="Our Plans"
             />
-
+    
         <div class="cards">
             <PlansCard v-for="(item, index) in plansArray" :key="`plans${index}`"
             :name="item.name"
