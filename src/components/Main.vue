@@ -9,6 +9,8 @@
 
     <Work :imageArray="workImage"/>
 
+    <Plans />
+
   </main>
 </template>
 
@@ -17,6 +19,7 @@ import Jumbo from '@/components/Jumbo.vue'
 import Section from '@/components/Section.vue'
 import Service from '@/components/Service.vue'
 import Work from '@/components/Work.vue'
+import Plans from '@/components/Plans.vue'
 
 export default {
     name: 'Main',
@@ -24,7 +27,8 @@ export default {
         Jumbo,
         Section,
         Service,
-        Work
+        Work,
+        Plans
     },
 
     data() {
