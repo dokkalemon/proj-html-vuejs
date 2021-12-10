@@ -11,6 +11,8 @@
 
     <Plans :plansArray="plansCard"/>
 
+    <News />
+
   </main>
 </template>
 
@@ -20,6 +22,7 @@ import Section from '@/components/Section.vue'
 import Service from '@/components/Service.vue'
 import Work from '@/components/Work.vue'
 import Plans from '@/components/Plans.vue'
+import News from '@/components/News.vue'
 
 export default {
     name: 'Main',
@@ -28,7 +31,8 @@ export default {
         Section,
         Service,
         Work,
-        Plans
+        Plans,
+        News
     },
 
     data() {
