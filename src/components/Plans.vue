@@ -7,6 +7,8 @@
         <div class="plans-container container px-15">
             <Title :secondarySet="true"
             title="Our Plans"
+            subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+
             />
     
         <div class="cards">

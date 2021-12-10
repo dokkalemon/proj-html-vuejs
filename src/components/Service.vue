@@ -6,6 +6,8 @@
       <div class="service-container container px-15">
           <Title :secondarySet="true"
           title="See Out Top Notch Services"
+            subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
+
           />
 
         <div class="service-cards">

@@ -4,6 +4,7 @@
         
           <Title
           title="Meet the new Agency SEO Template From The Avada Team"
+          subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
           />
           <div class="section-cards">
               <PrimaryCard :primarySet="true" v-for="(item, index) in infoTemplateArray" :key="`key${index}`"

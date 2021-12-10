@@ -2,7 +2,7 @@
 <!-- V-Bind on class for 2 types of title (different color) -->
     <div class="section-title" :class="{secondary: secondarySet}">
         <h2>{{title}}</h2>
-        <h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</h4>
+        <h4>{{subtitle}}</h4>
     </div>
 </template>
 
@@ -12,6 +12,7 @@ export default {
 
     props: {
         title: String,
+        subtitle: String,
         secondarySet: Boolean,
     }
 }
