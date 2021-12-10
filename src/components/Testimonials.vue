@@ -5,7 +5,7 @@
         title="What Our Clients Say"
         />
 
-        <div class="slider">
+        <div class="slider" :class="{activeSlider: changePage}">
             <div class="slider-item">
                 <div class="slider-image">
                     <img src="../assets/testimonials-2.jpg" alt="">
@@ -19,24 +19,24 @@
             </div>
             <div class="slider-item">
                 <div class="slider-image">
-                    <img src="../assets/testimonials-2.jpg" alt="">
+                    <img src="../assets/testimonials-1.jpg" alt="">
                 </div>
                 <div class="slider-text">
                     <p>Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.</p>
                 </div>
                 <div class="slider-info">
-                    <h3><span>Luis Desalvo</span>, CREO TECH</h3>
+                    <h3><span>Luisa Desalvo</span>, BOOL TECH</h3>
                 </div>
             </div>
         </div>
         <div class="slider-nav">
-            <div class="slider-nav-item active"></div>
-            <div class="slider-nav-item"></div>
+            <div class="slider-nav-item" :class="{active: changePage === false}" @click="(changePage = false)"></div>
+            <div class="slider-nav-item" :class="{active: changePage}" @click="(changePage = true)"></div>
         </div>
 
         <div class="testimonials-logos container px-15">
         <div class="line"></div>
-        <div class="logos-scroll">
+        <div class="logos-scroll" :class="{activeLogo: changePage}">
             <div class="logo-container">
                 <div class="logo">
                     <img src="../assets/clients_partner_5-200x202.png" alt="">
@@ -83,6 +83,12 @@ export default {
 
     components: {
         Title
+    },
+
+    data() {
+        return {
+            changePage: false
+        }
     }
 }
 </script>
@@ -93,14 +99,14 @@ export default {
 
 .testimonials {
     background-color: #fff;
-
     padding-top: 100px;
     text-align: center;
     overflow: hidden;
     .slider {
         width: 200%;
         display: flex;
-    
+        position: relative;
+        transition: left .4s ease;
     .slider-item {
         width: 100%;
         .slider-image {
@@ -113,7 +119,6 @@ export default {
         .slider-text {
             padding-top: 25px;
             p {
-
                 font-style: italic;
                 width: 35%;
                 margin: 0 auto;
@@ -131,10 +136,6 @@ export default {
             }
         }
     }
-    
-    
-    
-    
     }
     .slider-nav {
         width: 100%;
@@ -172,6 +173,7 @@ export default {
             width: 150%;
             height: 300px;
             display: flex;
+            position: relative;
             .logo-container {
                 width: 50%;
                 height: 100%;
@@ -183,14 +185,17 @@ export default {
                         height: 110px;
                     }
                 }
-                
-               
             }
         }
     }
-
 }
 
+.activeLogo {
+    left: -50%;
+}
+.activeSlider {
+        left: -100%;
+    }
 
 
 
