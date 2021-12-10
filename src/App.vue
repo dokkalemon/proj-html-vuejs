@@ -51,7 +51,7 @@ export default {
                     labelState: false
                 },
                 {
-                    label: 'Where We Eork',
+                    label: 'Where We Work',
                     activeState: false,
                     url: '/',
                     labelState: false

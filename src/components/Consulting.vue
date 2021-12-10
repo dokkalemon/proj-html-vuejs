@@ -6,7 +6,7 @@
 
       <div class="consulting-info container px-15 ">
           <Title 
-          title="Start Your Frer Consultation" 
+          title="Start Your Free Consultation" 
           subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium"
           :secondarySet="true"/>
 
