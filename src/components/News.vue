@@ -1,9 +1,19 @@
 <template>
-  <section class="news container px-15 debug">
+  <section class="news container px-15">
     <Title title="Our News" />
 
-    <div class="posts">
-      <Post />
+    <div class="posts"> 
+      <Post v-for="(item, index) in postArray" :key="`post${index}`"
+      :thumb="item.thumb"
+      :title="item.title"
+      :date="item.date"
+      :text="item.text"
+      />
+      
+    </div>
+
+    <div class="button">
+      <button class="button-primary">Go to news</button>
     </div>
   </section>
 </template>
@@ -18,6 +28,10 @@ export default {
     components: {
       Title,
       Post
+    },
+
+    props: {
+      postArray: Array,
     }
 }
 </script>
@@ -30,6 +44,16 @@ export default {
   padding-top: 100px;
   text-align: center;
   height: 900px;
+  
+  .posts {
+    height: 430px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    padding-top: 30px;
+  }
 }
 
 

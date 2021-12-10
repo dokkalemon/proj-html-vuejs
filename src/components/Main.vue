@@ -11,7 +11,7 @@
 
     <Plans :plansArray="plansCard"/>
 
-    <News />
+    <News :postArray="post"/>
 
   </main>
 </template>
@@ -132,6 +132,26 @@ export default {
                     storage: 'Unlimited',
                     buttonState: true,
                 }
+            ],
+            post: [
+                {
+                    thumb: 'related-service-2-320x202.jpg',
+                    title: 'Why You Need A SEO Agency Now',
+                    date: 'November 1st, 2017',
+                    text: 'ALorem impsum dolor sit amet, consectetur adipiscing elit- in et scelerisque sem. Nunc molestie neque augue, at gravida mi blandit.'
+                },
+                {
+                    thumb: 'related-service-4-320x202.jpg',
+                    title: 'Why You Need A SEO Agency Now',
+                    date: 'November 1st, 2017',
+                    text: 'ALorem impsum dolor sit amet, consectetur adipiscing elit- in et scelerisque sem. Nunc molestie neque augue, at gravida mi blandit.'
+                },
+                {
+                    thumb: 'blog-post-6-320x202.jpg',
+                    title: 'Why You Need A SEO Agency Now',
+                    date: 'November 1st, 2017',
+                    text: 'ALorem impsum dolor sit amet, consectetur adipiscing elit- in et scelerisque sem. Nunc molestie neque augue, at gravida mi blandit.'
+                },
             ]
         }
     }
