@@ -13,6 +13,8 @@
 
     <News :postArray="post"/>
 
+    <Testimonials />
+
   </main>
 </template>
 
@@ -23,6 +25,7 @@ import Service from '@/components/Service.vue'
 import Work from '@/components/Work.vue'
 import Plans from '@/components/Plans.vue'
 import News from '@/components/News.vue'
+import Testimonials from '@/components/Testimonials.vue'
 
 export default {
     name: 'Main',
@@ -32,7 +35,8 @@ export default {
         Service,
         Work,
         Plans,
-        News
+        News,
+        Testimonials
     },
 
     data() {
