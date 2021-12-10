@@ -19,6 +19,7 @@
                 <p>Unlimited Users</p>
             </div>
             <div class="plans-button">
+                <!-- V-Bind class for change a color -->
                 <button class="button-primary" :class="{buttonTertiary: tertiarySet}">START TODAY</button>
             </div>
 
