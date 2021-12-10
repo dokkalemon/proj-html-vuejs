@@ -70,9 +70,11 @@ export default {
   },
 
   created () {
+    /* Function for Header Background on scroll page */
     window.addEventListener('scroll', this.scrollPage);
   },
   destroyed () {
+    /* Function for Header Background on scroll page */
     window.removeEventListener('scroll', this.scrollPage);
   },
   methods: {
@@ -88,8 +90,6 @@ export default {
 
 <style lang="scss">
 @import './styles/global.scss';
-
-
 
 
 </style>

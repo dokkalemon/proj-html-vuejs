@@ -1,5 +1,7 @@
 <template>
   <section class="card" >
+
+      <!-- V-bind in class for the 2 types of card -->
     <div class="card-container " :class="{primary: primarySet, secondary: secondarySet}">
         <div class="card-icon">
             <i :class="icon"></i>
@@ -9,6 +11,8 @@
         </div>
         <div class="card-text">
             <p>{{text}}</p>
+
+            <!-- V-show in Read More for first type of card -->
         <div class="card-more" v-show="secondarySet">
             <a href="">Read More ></a>
         </div>
@@ -77,7 +81,6 @@ export default {
 
                 &:hover {
                     opacity: 0.5
-
                 }
             }
         }

@@ -37,10 +37,8 @@ header.active {
     .header {
         height: 60px;
         transition: all 0.4s ease
-    }
-    
+    }   
 }
-
 .header {
     height: 100px;
     display: flex;
@@ -52,7 +50,6 @@ header.active {
             height: 40px;
         }
     }
-
     .header-link {
         flex-grow: 1;
         height: 100%;

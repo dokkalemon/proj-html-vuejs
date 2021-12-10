@@ -5,7 +5,6 @@
           <Title
           title="Meet the new Agency SEO Template From The Avada Team"
           />
-
           <div class="section-cards">
               <PrimaryCard :primarySet="true" v-for="(item, index) in infoTemplateArray" :key="`key${index}`"
               :icon="item.icon"
@@ -13,7 +12,6 @@
               :text="item.text"
               />
           </div>
-
           <div class="section-image">
               <img src="../assets/agency-seo-desk-front-1200x570.jpg" alt="">
           </div>

@@ -1,24 +1,16 @@
 <template>
   <section class="work full-width">
     <div class="work-container container px-15">
-
         <Title title="Our Work"/>
-
         <div class="work-image">
             <div class="img-container" v-for="(item, index) in imageArray" :key="`img${index}`">
                 <img :src="require(`../assets/${item.name}`)" alt="">
             </div>
         </div>
-
         <div class="work-button">
             <button class="button-primary">View our Work</button>
         </div>
     </div>
-      
-
-
-
-
   </section>
 </template>
 
