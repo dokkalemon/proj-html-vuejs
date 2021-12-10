@@ -8,7 +8,6 @@
           <div class="footer-nav">
               <ul>
                   <li v-for="(item, index) in footerArray" :key="`footer${index}`"><a :href="item.url" :class="{active: item.activeState}">{{item.label}}</a></li>
-             
               </ul>
           </div>
 
@@ -28,8 +27,11 @@
 
 
       </div>
-      
-
+      <a href="#top">
+          <div class="arrow-up">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </a>
 
   </footer>
 
@@ -54,6 +56,7 @@ export default {
 
 footer {
     height: 350px;
+    position: relative;
     .footer {
         padding-top: 50px;
         .footer-logo {
@@ -115,6 +118,28 @@ footer {
                     margin-right: 0;
                 }
             }
+        }
+    }
+    a {
+        .arrow-up {
+        height: 30px;
+        width: 37px;
+        background-color: $primary-text;
+        position: absolute; 
+        right: 10%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px 5px 0px 0;
+        cursor: pointer;
+        transition: all .4s ease;
+        i {
+            color: white;
+        }
+        }
+        &:hover .arrow-up {
+            background-color: $primary-title
         }
     }
 }
